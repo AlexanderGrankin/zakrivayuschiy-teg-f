@@ -1,10 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root{
-    --main-font: 'Inter-Variable';
-    --accent-font: 'PressStart2P-Regular';
-    --title-weight: 700;
-    --text-weight: 400;
     --page-bg: 
         repeating-linear-gradient(
             0deg,
@@ -26,12 +22,12 @@
             to bottom,
             white, transparent
         );
-    --accent-text-weight: 400;
-    --max-width: 700px;
+    --main-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P';
+    --title-weight: 700;
+    --text-weight: 400;
     --accent-color: #000;
     --accent-bg-color: #fff;
-    --filled-bg-color: #000;
     --button-text-color: #fff;
-    --heart__contour-color: #000;
-    --heart__main-color: red;
+    --heart-color: red;
 }

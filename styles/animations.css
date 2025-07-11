@@ -24,6 +24,6 @@
         fill: transparent;
     }
     to{
-        fill: var(--heart__main-color);
+        fill: var(--heart-color);
     }
 }

@@ -22,19 +22,19 @@
 }
 
 .accent-title{
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: 65px;
   font-weight: var(--text-weight);
 }
 
 .accent-subtitle{
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: 23px;
   font-weight: var(--text-weight);
 }
 
 .accent-text{
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   font-weight: var(--text-weight);
 }
@@ -104,7 +104,7 @@
 .card-watermark{
   position: absolute;
   top: 27px;
-  right: 13px;
+  right: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
   -webkit-text-stroke: 1px #fff;
   opacity: 0.4;
   mix-blend-mode: hard-light;
@@ -140,21 +140,20 @@
 
 .card__icon-button{
   padding: 0;
-  border: 1px solid transparent;
   background-color: transparent;
   cursor: pointer;
   transition: 0.3s ease;
   block-size: 38px;
   outline: none;
+  border: 0;
 }
 
 .card__icon-button:focus-visible{
-  border: 2px solid var(--accent-color);
-  outline: none;
+  outline: 2px solid var(--accent-color);
 }
 
 .card__icon-button:focus{
-  outline: none;
+  outline: 2px solid var(--accent-color);
 }
 
 .animated-button{
@@ -189,7 +188,7 @@
   transition: 0.5s ease-in-out;
 }
 
-.animated-button:focus{
+.animated-button:focus-visible{
   transition: 0.3s ease;
   box-shadow: 2px 2px var(--accent-color);
 }
